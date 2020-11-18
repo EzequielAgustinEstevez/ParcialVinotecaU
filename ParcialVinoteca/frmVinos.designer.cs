@@ -55,6 +55,7 @@
             this.btnActualizar.TabIndex = 0;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnSalir
             // 
@@ -65,6 +66,7 @@
             this.btnSalir.TabIndex = 2;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // lstVinos
             // 
@@ -74,6 +76,7 @@
             this.lstVinos.Name = "lstVinos";
             this.lstVinos.Size = new System.Drawing.Size(121, 212);
             this.lstVinos.TabIndex = 3;
+            this.lstVinos.SelectedIndexChanged += new System.EventHandler(this.lstVinos_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -224,6 +227,8 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmVinos";
             this.Text = "Vinos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmVinos_FormClosing);
+            this.Load += new System.EventHandler(this.frmVinos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
